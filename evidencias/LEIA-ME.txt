@@ -1,0 +1,1 @@
+Coloque aqui: build.png, docker-ps.png, navegador.png (evidencias.txt e gerado pelo executar.ps1).
