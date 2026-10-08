@@ -1,7 +1,7 @@
 # Site estático em container Docker (Debian + nginx)
 
 **Aluno:** Gabriel da Silva Der Garabedian
-**Disciplina:** SUA DISCIPLINA
+**Disciplina:** DevOps
 **Data:** 08/10/2026
 
 ## Descrição
@@ -52,4 +52,5 @@ docker rm meu_site
 - Build concluído: ![build](evidencias/build.png)
 - Container em execução: ![docker ps](evidencias/docker-ps.png)
 - Site no navegador: ![navegador](evidencias/navegador.png)
+
 
