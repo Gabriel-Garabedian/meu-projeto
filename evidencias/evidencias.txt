@@ -6,16 +6,15 @@ Docker version 29.8.0, build 88096ef
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d----          08/10/2026    15:39                evidencias
-d----          08/10/2026    15:38                site
+d----          08/10/2026    16:00                evidencias
+d----          08/10/2026    16:02                site
 -a---          08/10/2026    15:37            204 Dockerfile
--a---          08/10/2026    15:51           4608 meu_site.tar
--a---          08/10/2026    15:51           1506 README.md
+-a---          08/10/2026    16:03           2560 meu_site.tar
+-a---          08/10/2026    16:02           1507 README.md
 
 ### tar -tf
 ./
 ./index.html
-./README.md
 ### Dockerfile
 FROM debian:trixie
 RUN apt-get update && apt-get install -y --no-install-recommends nginx \
@@ -25,19 +24,19 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ### docker images
 IMAGE             ID             DISK USAGE   CONTENT SIZE   EXTRA
-meu_site:latest   352f4cb2b3a6        201MB           54MB   U    
+meu_site:latest   37ee7fffacca        201MB           54MB   U    
 ### docker ps
-CONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS              PORTS                                     NAMES
-b7a16cb6a08a   meu_site   "nginx -g 'daemon ofÔÇª"   About a minute ago   Up About a minute   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   meu_site
+CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+4c8776514c95   meu_site   "nginx -g 'daemon ofÔÇª"   13 seconds ago   Up 13 seconds   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   meu_site
 ### curl
 HTTP/1.1 200 OK
 Server: nginx
-Date: Thu, 08 Oct 2026 18:53:40 GMT
+Date: Thu, 08 Oct 2026 19:03:33 GMT
 Content-Type: text/html
-Content-Length: 486
-Last-Modified: Thu, 08 Oct 2026 18:51:30 GMT
+Content-Length: 479
+Last-Modified: Thu, 08 Oct 2026 18:56:01 GMT
 Connection: keep-alive
-ETag: "6ac7e632-1e6"
+ETag: "6ac7e741-1df"
 Accept-Ranges: bytes
 
 <!DOCTYPE html>
@@ -52,9 +51,10 @@ Accept-Ranges: bytes
 </head>
 <body>
   <h1>Meu site rodando em container Docker</h1>
-  <p>Nome: Gabriel da Silva Der Garabedian | Disciplina: SUA DISCIPLINA | Data: 08/10/2026</p>
+  <p>Nome: Gabriel da Silva Der Garabedian | Disciplina: DevOps | Data: 08/10/2026</p>
   <p>Servido por nginx em um container baseado em debian:trixie.</p>
 </body>
 </html>
+
 
 ### logs

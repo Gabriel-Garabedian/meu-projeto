@@ -49,8 +49,10 @@ docker rm meu_site
 
 ## Evidências
 - Saídas de comandos: [evidencias/evidencias.txt](evidencias/evidencias.txt)
-- Build concluído: ![build](evidencias/build.png)
-- Container em execução: ![docker ps](evidencias/docker-ps.png)
-- Site no navegador: ![navegador](evidencias/navegador.png)
+- Build concluído: ![build](evidencias/build.jpeg)
+- Container em execução: ![docker ps](evidencias/docker-ps.jpeg)
+- Site no navegador: ![navegador](evidencias/navegador.jpeg)
+
+
 
 
